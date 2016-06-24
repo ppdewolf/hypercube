@@ -1,0 +1,55 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: INFO                                          *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+ 1005 FORMAT(/' Read control-file for table : ',A40,' at ',A)
+
+ 4011 FORMAT(/' The number of dimensions: ',I2,' in table: ',A72/,
+     #        ' exceeds max. number of dimensions: ',
+     #        I2/,' as given in control-file -TABELL- . ',
+     #        'Please change !'//)
+
+ 4012 FORMAT(/' In dim.: ',I2,' error in the margin costs parameter :',
+     #       I3/,' (use only -1, 1 =  extra low/ extra high costs ',
+     #    '  or 0 = usual costs for cells in margins of a sub-table)'/)
+
+ 4020 FORMAT(///' Title for this table :',A72/)
+
+ 4040 FORMAT (
+     #' Number of aggregations ',I10,' exceeds maximum number ',I10/
+     #' Contact GHMITER user support'/
+     #' (variable IMS in subroutine HUNK0 must be changed)')
+
+ 4050 FORMAT (' Number of keys ',I10,' larger as expected ',I10/
+     #        ' Contact GHMITER user support'/
+     #        '(Please change variable IW in subroutine HUNK0)')
+
+ 4060 FORMAT (/' Dimension I = ',I2,' Tab. : ',A8//,
+     # ' Measure of distance in dimension:',F10.2//,
+     # ' Number of key aggregations',' in dimension I  MS(I) ',I6//,
+     # ' Number of keys per aggregation in dimension I ',
+     # ' MUS(I,J),J=1,MS(I)'//10(1X,I5))
+
+ 4070 FORMAT(/' Aggregation   Key         :')
+
+ 4014 FORMAT(/' No double cube protection for single statistical',
+     #        ' unit !')
+
+ 4013 FORMAT(/' Double cube protection for single statistical unit!')
+
+ 4150 FORMAT(/' Cube quota     : ',F10.5)
+
+ 4062 FORMAT(/' Value for weighting are used ! ')
+
+ 4063 FORMAT(/' Dominanz quota : ',F10.5)
+
+ 4064 FORMAT(/' The Dominanz quota must be greater then 1.0 **Abend**'/)
+
+ 4160 FORMAT(/' errors of estimate accept for cube quota !')
+
+ 4066 FORMAT(/' No cube quota for tables of mixed value, '/,
+     #  ' (positiv and negativ values without errors of estimate)'/)
+

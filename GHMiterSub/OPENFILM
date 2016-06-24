@@ -1,0 +1,22 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: OPENF                                         *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4005 FORMAT( 'Temp-File ',A40,' resulting from a previous run'/
+     #        ' ended with a break down',
+     #        ' must be deleted from the System-temp-folder'/
+     #        'Please delete file and restart !! ')
+
+ 4010 FORMAT (' Unknown file status'/
+     #        ' Program is terminated')
+
+ 4020 FORMAT ('Unable to open file ',A40,' for reading ')
+
+ 4030 FORMAT ('Unable to create file ',A40)
+
+ 4040 FORMAT ('Opening of a file failed. Program is terminated')
+

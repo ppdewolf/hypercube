@@ -1,0 +1,30 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: MONL                                          *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+
+ 1000 FORMAT(' Suppression Hypercubes :             '/
+     #       '   - PIVOT   - the target suppression              '/
+     #       '   - X.QUAW  - cell value in logarythmic scale'/
+     #       '   - X.DOMIN - dominance threshold                 '/
+     #       '   - AB      - hypercube is not feasible because...'/
+     #       '          1. - it contains a zero value               '/
+     #       '          2. - Single respondent cells  (doublecube option
+     # on) '/
+     #       '          3. - Single statistical units (doublecube option
+     # off)'/
+     #       '          4. - zero a priori bound deviations         '/
+     #       '   - GRENZEN - bounds for this hypercube'/
+     #       '   - QUOTE   - Range Ratio                              '/
+     #       '     - W:    - original value                           '/
+     #       '     - K:    - value                         '/
+     #       '     - R:    - value in logarythmic scale     '/
+     #       '     - I:    - K or R with measure of distance          '/
+     #       '     - G:    - I or R or K with external weights       '/)
+
+ 2000 FORMAT(//' The hypercubes for the incorrect subtable:'//)
+

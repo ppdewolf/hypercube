@@ -1,0 +1,21 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: BAULAP                                        *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 1005 FORMAT(/' Preparation for creation of master address array in 
+     #table : ',I2,' at ',A)
+
+
+ 1010 FORMAT(' Invalid number of dimensions (the program can be'/,
+     #       ' applied to problems with up to 40 different'/,
+     #       ' variables at most! '//)
+
+
+ 1015 FORMAT(/' Inconsistency in variable names '/
+     #        ' as used in control-file STEUER and TABELLE!!   '/
+     #        ' no identical variable found) **Abend** '/)
+

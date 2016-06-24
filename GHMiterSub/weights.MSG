@@ -1,0 +1,13 @@
+C**********************************************************************
+C* GHQUAR Version 4.5 international                                   *
+C*                                                                    *
+C* Messages for module: WEIGHTS                                       *
+C* Language:            GERMAN                                        *
+C*                                                                    *
+C**********************************************************************
+
+1000  FORMAT('It is not allowed to use both of
+     #        preference-codes 7 and 2
+     #        within the same run')
+
+

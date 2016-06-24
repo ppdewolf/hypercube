@@ -1,0 +1,17 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: SUCHSS                                        *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+ 1005 FORMAT(/' Begin construction overlap-sections at ',A)
+
+ 1006 FORMAT(/' End construction overlap-sections at  ',A)
+
+ 1007 FORMAT(' Overlap no: ',I6, ' key : ',7(A8,A1))
+
+ 2000 FORMAT(/' Total size of Overlap sections exceeds the maximum size
+     # of 750.000 cells '/
+     #        ' Please contact GHMITER user support !'/)
+

@@ -1,0 +1,13 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: ISORTS                                        *
+C* Language:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT (' Sorting error in ''ISORTS''')
+
+ 4020 FORMAT (' Memory requirement for sort exceeds space
+     # limit',I8,':',I8,':',I8,':',I8)
+

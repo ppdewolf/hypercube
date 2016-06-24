@@ -1,0 +1,199 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: LOAD                                          *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 1001 FORMAT(/' Begin Sort of the grand pointer array : ',I2,' at ',A)
+
+ 1002 FORMAT(/' End Sort of the grand pointer array : ',I2,' at ',A)
+
+ 4065 FORMAT(/' Negative weight !! Program is',
+     #        ' terminated !!',F15.5/)
+
+ 4067 FORMAT(/' Negative a priori bound deviation found ',
+     #  ' **Abend** !!',F15.5,'-',F15.5/)
+
+ 4070 FORMAT(' NEGATIVE MINIMUM VALUE INCONSITENT WITH ABSOLUTEVALUES'/,
+     #  ' **PLEASE USE POSITIVE LEAST ABSOLUTE VALUE '/,
+     #  ' **OR CHANGE THE NEGATIVE VALUE PARAMETER TO 0'/
+     #  ' MINW:',F20.5/
+     #  ' NEGATIVE VALUE PARAMETER:',F20.5/)
+
+ 4080  FORMAT (/' cost calculation based on absolutes of the ',
+     #          'cell values'/)
+
+ 4090 FORMAT (/' cost calculation based on shifted (to positive) ',
+     #         'cell values '/)
+
+ 4094 FORMAT(/' Lower a priori bound deviation exceeds',
+     #        ' original value:',F15.5/)
+
+ 4098 FORMAT(/' Assuming zero lower a priori bound:',
+     #          F15.5/)
+
+ 4100 FORMAT (
+     # ' Value exceeding the maximum value as stated in ',
+     # 'controle file found !'/
+     # ' This may be due to  negative value shifting !! ',
+     # ' Please adjust maximum value'/
+     # ' MAXVal          :',F20.5/
+     # ' original value           :',F20.5/
+     # ' ABS./shifted value:',F20.5)
+
+ 4105 FORMAT (
+     # ' A largest contribution stated in the data file exceeds the '/
+     # ' maximum value as stated in the control file!'/
+     # ' This may be due to  negative value shifting '/
+     # ' Please adjust maximum value'/
+     # ' MAXVal          :',F20.5/
+     # ' Largest contribution:',F20.5/
+     # ' ABS./shifted value of the largest contribution:',F20.5)
+
+ 4106 FORMAT (' Value of Weight Variable exceeding',/
+     #        ' the maximum value as stated in controle file found !'/
+     #        ' Please adjust maximum value'/
+     #        ' MAXVal                           :',F20.5/
+     #        ' Value of Weight Variable         :',F20.5/)
+
+ 4110 FORMAT (' Cell Value below the minimum value '/
+     #        ' as stated in controle file or derived '/
+     #        ' by the program found !'/
+     #        ' MINVal            :',F20.5/
+     #        ' Value             :',F20.5/
+     #        ' ABS./shifted value:',F20.5)
+
+ 4115 FORMAT (' A largest contribution stated in the data file '/
+     #        ' is below the minimum value '/
+     #        ' as stated in controle file or derived by the program !'/
+     #        ' MINVal              :',F20.5/
+     #        ' Largest contribution:',F20.5/
+     #        ' ABS./shifted value  :',F20.5)
+
+ 4116 FORMAT (' Value of Weight Variable below the minimum value '/
+     #        ' as stated in controle file or derived by the ',
+     #        'program found !'/
+     #        ' MINVal                           :',F20.5/
+     #        ' Value of Weight Variable         :',F20.5/)
+
+ 4120 FORMAT ('The cell with the following key combination '/
+     #        ' is a single respondent cell'/
+     #        ' but has not been flagged as primary suppression:',/
+     #        ,1X,'Please correct flag',/,1X,'!',6(A8,'!'))
+
+ 4130 FORMAT (////' Test print (first record of data file) :'
+     #  ,A40///,
+     #' Flag                           ( 5 digit) : ',10X,'!',I5,'!'//,
+     #' Number of respondents          (10 digit) : ',5X,'!',I10,'!'//,
+     #' Cell value                     (15 digit) : !',F16.0,'!'//,
+     #' Value of Weight Variable       (15 digit) : !',F16.0,'!'//,
+*C- GW
+     #' largest contribution           (15 digit) : !',F16.0,'!'//,
+     #' upper a priori bound deviation (15 digit) : !',F16.0,'!'//,
+     #' lower a priori bound deviation (15 digit) : !',F16.0,'!'//,
+
+     #' Keys (Number of dimensions : ',I1,') : !',7(A8,'!'))
+
+ 4135 FORMAT(//' !!!W!A!R!N!I!N!G!!!!!!!!!!!!!!W!A!R!N!I!N!G!!!!!!!!!'/
+     #     ' The overall range of the cell values in the table ',
+     #     'as resulting'/
+     #     ' from the parameters minimum and maximal-value) is ',
+     #     'considerably beyond the '/
+     #     ' actual overallrange as derived from the Input-file. ',
+     #     'This affects '/
+     #     ' the information loss measure used for the '/
+     #     ' selection of suppression hypercubes and may thus'/
+     #     ' affect the quality of the suppression pattern'/
+     #     ' Please check the minimal/maximal value !!'/
+     #     ' !!!W!A!R!N!I!N!G!!!!!!!!!!!!!!W!A!R!N!I!N!G!!!!!!!!!'//)
+
+ 4160 FORMAT ( 'unsuppressed single respondent cell !')
+
+ 4170 FORMAT (' Key ',A8,' present more than one time. Please ',
+     #        'check')
+
+ 4180 FORMAT (' ????????????????????????????????????????????????????'/
+     #        ' A negative minimal value is specified in the ',
+     #        'control file'/
+     #        ' but the data file does not contain'/
+     #        ' any negative cell value'/
+     #      ' Check that this is not due to an error in the data file!'/
+     #        ' A negative minimal values causes ''zero'' values to be'/
+     #        ' feasible as secondary suppressions. ',
+     #        'This may cause disclosure risk!!'/
+     #        ' ????????????????????????????????????????????????????')
+
+ 4190 FORMAT (/' ERROR: Number of input records=',I10,
+     #        ', is not identical '/
+     #        ' to the expected size of the table',I10,' .'/
+     #        ' **#* Program aborted ***')
+
+ 4200 FORMAT (//' Statistic of input file '///37X,' Number',6X,'in %'/)
+
+ 4210 FORMAT(' A) Cells with no. respondents > 0 ',I10,5X,F6.2//,
+     #       '  thereof                          '//,
+     #       '  1. Secondary Suppressions *      ',I10,5X,F6.2//,
+     #       '  2. Primary Suppressions          '//,
+     #       '  2.1  single contributor cells *  '//,
+     #       '   -   with positive non-zero value',I10,5X,F6.2//,
+     #       '   -   with zero cell value        ',I10,5X,F6.2//,
+     #       '  2.2  non-single contributor cells *'//,
+     #       '   -   with positive non-zero value',I10,5X,F6.2//,
+     #       '   -   with zero cell value        ',I10,5X,F6.2//,
+     #       '  3. unsuppressed cells *          ',I10,5X,F6.2//,
+     #       ' B) zero-cells without respondents ',I10,5X//,
+     #       ' C) Sum of cells (A + B)           ',I10,5X//,
+     #       ' * Total number of respondents     '///,
+     #       ' MinVal, MaxVal (c.f.control file) ',1PE15.8,5X,1PE15.8//,
+     #       ' MINVal, MaxVal (c.f. data file)   ',1PE15.8,5X,1PE15.8//,
+     #       ' ABS. MinVal, ABS. MaxVal          ',1PE15.8,5X,1PE15.8//,
+     #       ' Number of input records           ',I10//)
+
+ 4220 FORMAT (' ????????????????????????????????????????????????????'/
+     #' Programm Termination because of incorrect minimum ',
+     #' or maximum value !!'/
+     #' Please use the information given above to correct ',
+     #'the control file'/
+     #' ????????????????????????????????????????????????????'/)
+
+ 4230 FORMAT (/' Margin costs parameter could not be set ',
+     #'because of weighting !'/)
+
+ 4235 FORMAT(/ ' There were ',I7,' overlap positions (non-zero) '/
+     #         ' in table ',A40,' !'//)
+
+ 4240 FORMAT (' An error occured at key combination ',7(A8,1X),/
+     # ' error code IERR ',7(I5,1X),/
+     # ' index II(I) = ',I3,' IA(1,I) = ',I2,' I = ',I2,/
+     #' Please check that the key codes as read from the control files'/
+     # ' are identical to the key codes read from the data file.'//
+     # ' Please check also the aggregations given by the input file.'/
+     #' (Non-zero values must not add to a zero value or vice versa.)'//
+     # ' Please check correct file format of the data file.'//
+     # ' Do also check the sorting of the data file')
+
+ 4250 FORMAT (1X,'Free memory exceeded IMAX = ',I10)
+
+ 4700 FORMAT(/ ' In table ',A40,' dimension ',A8,/
+     #         ' are unsorted keys !'/
+     #         ' actuall key ',A8,' last key: ',A8//)
+
+ 4800 FORMAT(/' ????????????????????????????????????????????????????'/
+     #        ' In table ',A40,' inconsistency found in the value '/
+     #        ' of a cell in an overlap-section!                  '/
+     #  ' (value presumed to be identical to the value ',
+     #  'of a cell in a table'/
+     #  ' read earlier, but actually found to be different)'/
+     #  ' Actual cell value                              : ',F15.4/
+     #  '                                                     '/
+     #  ' error maybe due to: incosistent entries in identical cells '/
+     #  '                     Check Data-files                      '/
+     #  ' or                : inconsistency in variable names between'/
+     #  '          control files STEUER and TABELLE ! '/
+     #  '                                                     '/
+     #  ' at key-combination (incl. Pseudo-Dimension):'/,
+     #   40(A8,'-'),/
+     #  ' ????????????????????????????????????????????????????'/)
+

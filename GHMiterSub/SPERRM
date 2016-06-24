@@ -1,0 +1,12 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: SPERR                                         *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 1010 FORMAT('  Size of the subtable too large for exploitation '/
+     #       '  Please contact GHMITER user support - program code 
+     #must be changed -'//)
+

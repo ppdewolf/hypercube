@@ -1,0 +1,14 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: AGTEST                                        *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT (' missing higher aggregation level !')
+
+ 4020 FORMAT (' missing sum for a row in the table!')
+
+ 4030 FORMAT (' An aggregation level is skipped in the data file!')
+

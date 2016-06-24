@@ -1,0 +1,91 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: STEUER                                        *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+ 1005 FORMAT(/' Run of GHMITER program for secondary
+     #         suppression started: ',I2,' for '/
+     #        ' file ',A8, ' at ',A/)
+
+ 1006 FORMAT(/' Start with construction of the temp-file for table : ',
+     #          A8,' UM ',A)
+
+ 1007 FORMAT(/' temp-file assigned at ',A)
+
+ 1008 FORMAT(/' End construction of the temp-file for table : ',A8,
+     #        ' at ',A)
+
+ 1009 FORMAT(/' Beginn update of Input-File : ',A8, 'at ',A)
+
+ 4090 FORMAT (' Load condition of base table (index) ',I10,
+     #        ' Maximum',I10//)
+
+ 4100 FORMAT (' Output of constructed table'/)
+
+ 4110 FORMAT (' Dimension',I2,'   error key IERR(',I1,') = ',I6//
+     #        ' Number of positions II(',I1,') = ',I6//,
+     #        ' Length of dimension LI(',I1,') = ',I6//)
+
+ 4120 FORMAT (' aggreg.    posit.   lower      upper    ',
+     #          'sub-matrix-index   code'/)
+
+ 4135 FORMAT(' These values are eligible to measure distances in
+     #              dimension',I1,/
+     #       ' Maximum distance :',F8.0/,
+     #       ' Minimum distance :',F8.0//)
+
+ 4136 FORMAT(' distance measure too large :',F8.0,' for dimension :',I1/,
+     #       ' set to maximum value :',F8.0//)
+
+ 4137 FORMAT(' distance measure too small :',F8.0,' for dimension :',I1/,
+     #       ' set to minimum value :',F8.0//)
+
+ 4140 FORMAT (' NZ   (Number of sub-tables)                  ',I10//,
+     #        ' NGES (number of cells)                 ',I10//,
+     #        ' WGES (Total of cell values)                  ',F18.0)
+
+ 4150 FORMAT (//' Obtained values to be applied to:'///,
+     # ' IGEI  = ',I10,'  (Single Respondents)'//
+     # ' IGEIT = ',I10,'  (Single Respondents temp.)'//
+     # ' ISPP  = ',I10,'  (Primary Suppressions)'//
+     # ' ISPS  = ',I10,'  (Secondary suppressions, iter.)'//
+     # ' ISPS1 = ',I10,'  (Secondary suppressions, agg. change)'//
+     # ' ISPSQ = ',I10,'  (Secondary suppressions, cube)'//
+     # ' ISPSQ1= ',I10,'  (Secondary suppressions, cube, agg. change.)'//
+     # ' ISPSO1= ',I10,'  (Secondary suppressions, with post-check)'/
+     # ' ISPSM1= ',I10,'  (Secondary suppressions, without post-check)'/
+     # ' RSCHE = ',1PE10.2E2,'  (Sum of single Respondents)'//
+     # ' RSCHS = ',1PE10.2E2,'  (Sum of other confidential cells)'//
+     # ' RSCHG = ',1PE10.2E2,'  (additional costs for margins)'/'1')
+
+ 4180 FORMAT (' Number of sec. suppressed fields lager at ',I10/,
+     #       ' memory for ''SORT'' to small'/,
+     #       ' contact GHMITER user support',
+     #       ' ISK and LST in subroutine HUNK0 must be increased')
+
+ 4190    FORMAT (' Number of iteration ',I3,' for table : ',A8,'
+     #         with '/
+     #     ' ',i10,' already suppressed values in overlap-area and '/
+     #     ' ',i10,' newly suppressed values not in overlap-area'/
+     #     ' ',i10,' newly suppressed values in overlap-area.'/ )
+
+ 4200 FORMAT (//' Suppressions in margins of table :',A8,' '//)
+ 4210 FORMAT (I1,' DIMENSIONS')
+
+ 4220  FORMAT (2X,I1,'. Dimension with set ','margin cost parameter 
+     # set is ',A)
+
+ 4240 FORMAT(2X,I1,'. margin cost parameter  ',
+     #        'not set is ',A)
+
+ 4245 FORMAT(2X,I1,'. Dimension with margin cost parameter set ',
+     #       'to negativ is ',A)
+
+ 4250 FORMAT (1X,I10,' Suppression in the margins of ',A40)
+
+ 4260 FORMAT (1x,i8,' in margins ',7L3)
+
+ 4270 FORMAT (//,' Program ended properly at: ',A8,2x,a8)
+

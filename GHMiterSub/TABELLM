@@ -1,0 +1,26 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: TABELL                                        *
+C* Language:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT (' Load status of work table (INDEX) ',I10,
+     #        ' MAXIMUM ',I10)
+
+ 4020 FORMAT (' Load status of the code list lengths table (INDEX) ',
+     #       I10, ' MAXIMAL ',I10)
+
+ 4030 FORMAT ('1LM0  (Largest sub-table found)            ',I10//,
+     #        ' LG   (Maximum value of sub-tables            ',I10//,
+     #        ' IDD0 (Largest sum of code list lengths found in a
+     # subtable) ',I10//,
+     #        ' IDDD (Maximum per-subtable sum of code list lengths)'
+     #,I10/)
+
+ 4040 FORMAT (' LMS  (number of cells in the table)               ',
+     #I10//,
+     #        ' PRL  (Overlap section)                            ',
+     #F7.2/)
+

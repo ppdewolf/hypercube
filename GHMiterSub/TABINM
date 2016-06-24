@@ -1,0 +1,17 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: TABIN                                         *
+C* Language:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+      IF (PP.EQ.2) THEN
+         TABTEXT='original values'
+      ELSE
+         TABTEXT='logarythmic values'
+      END IF
+
+ 4010 FORMAT (/1X,50('-')/1X,' Table no.  ',I10,3X,A20/1X,50('-'))
+
+ 4050 FORMAT (1X,132('-')/1X,I1,'   Dimensions :',7I3)

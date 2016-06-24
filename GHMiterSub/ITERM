@@ -1,0 +1,20 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: ITER                                          *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+C
+ 1005 FORMAT (' GHMITER run (2.2.',A2,')'
+     #         //' started ', A/)
+
+ 1010  FORMAT ('Requested memory exceeds ',
+     #         'size of static arrays'/
+     #         'change parameter Maxmen and MaxIMAX in ',
+     #         'source code.'/
+     #         'Contact GHMITER user support'/
+     #         'Program is terminated!')
+
+ 1100 FORMAT (' GETMAIN failed, memory exceeded')
+

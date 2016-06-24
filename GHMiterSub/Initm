@@ -1,0 +1,79 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: INIT                                          *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 1010 FORMAT(' **ABEND** !! Invalid number of tables (max. 20 tables)'/)
+
+ 1020 FORMAT(' Number of tables: ',I2//)
+
+ 1030 FORMAT(' In-File ',I2,' for table: ',A40,' Control-file: ',A40/,
+     #       '         Out-file : ',A40,'  '//)
+
+ 1040 FORMAT(' Requested memory                            : ',I10/,
+     #       ' Requested number of keys per sub-table      : ',I10/,
+     #       ' Requested lengths of sub-table indexes      : ',I10/,
+     #       ' Requested number of dimesions for all tables: ',I10/,
+     #       ' Requested number of all keys                : ',I10//)
+
+ 1050 FORMAT (' Invalid number of dimensions ***ABEND*** ',I10/,
+     #        ' Check control files')
+
+ 1060 FORMAT(' Maximum number of dimensions in a table : ',I1//)
+
+ 1070 FORMAT(/' The ',I2,' table has in the',I1,' dimension',
+     #        '  the following overlap-keys :',A8,' (',I2,')'//)
+
+ 1080 FORMAT(' **ABEND** !! Invalid number of dimensions ( max. 40'/,
+     #       ' different dimensions ! '//)
+
+ 4010 FORMAT (/
+     # ' logarythmic scale values:'/'  - Minimum value: ',1PE8.1E2,
+     #                             /'  - Maximum value: ',1PE8.1E2)
+
+ 4051 FORMAT(/' ???????????????????????????????????????????????'/
+     #      ' You have chosen processing of a tabel with positive'/
+     #      ' bounded values, but you have specified minimal/maximal'/
+     #      ' values in the control-file that are inconsistent with ',
+     #      'that.  '/
+     #      ' (MinVal <= 0, MaxVal <= 0 ? ) '/
+     #      ' ???????????????????????????????????????????????')
+
+ 4052 FORMAT(/' ???????????????????????????????????????????????'/
+     #      ' You have selected table-processing with values  '/
+     #      ' to be shifted from negative to positive values, but'/
+     #      ' you specified an incorrect minimal/maximal value in the'/
+     #      ' control-file .  '/
+     #      ' (MinVal >= 0, MaxVal < 0 ? ) '/
+     #      ' ???????????????????????????????????????????????')
+
+ 4053 FORMAT(/' ???????????????????????????????????????????????'/
+     #      ' You have selected table-processing with absolutes'/
+     #      ' to be taken for negativ values, but '/
+     #      ' you specified an incorrect minimal/maximal value in the'/
+     #      ' control-file .  '/
+     #      ' (MinVal >= 0, MaxVal < 0 ? ) '/
+     #      ' ???????????????????????????????????????????????')
+
+ 4054 FORMAT(/' ???????????????????????????????????????????????'/
+     #      ' You have selected table-processing with absolutes'/
+     #      ' to be taken for negativ values, but '/
+     #      ' you specified an incorrect minimal/maximal value in the'/
+     #      ' control-file .  '/
+     #      ' (MinVal <= 0, MaxVal <= 0 ? ) '/
+     #      ' ???????????????????????????????????????????????')
+
+ 4120 FORMAT (/' Zero-cells must not be used as secondary suppressions')
+
+ 4130 FORMAT (' Error: zero cells supposed to be eligible for ',
+     #        'secondary '/
+     #        'suppression must be indicated in the data file with ',
+     #        'a cell'/
+     #        ' value exceeding the maximum cell value.'/
+     #        'Please correct the indicator value in the control file!')
+
+ 4140 FORMAT (/' Indicator for eligible zero-cell:',1PE8.1E2)
+

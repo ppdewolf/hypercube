@@ -1,0 +1,16 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: UPDA                                          *
+C* Language:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT (' End of input file at record no.. ',I10,
+     #        'new suppression at record no. ',I10,'  Inconsistency!')
+
+ 4020 FORMAT (//,
+     #  ' Number of secondary suppressions ',I6,' in %  ',F6.2,
+     #  '  of number of non-zero cells   '//
+     #  ' Total value suppressed         ',F18.1,' in %  ',F6.2,
+     #  '  of overall total  ')

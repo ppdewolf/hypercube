@@ -1,0 +1,36 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: HUNK0                                         *
+C* Language:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT ('To much memory for ''IMAX'' requested'/
+     #        'Maximum value:',I14/
+     #        'Requested     :',I14/
+     #        'Change Parameter MaxIMAX and MAXMEM'/
+     #        'Contact GHMITER user support'/
+     #        'Program is terminated')
+
+ 4020 FORMAT (//
+     #        ' Requested memory                                   ',
+     #        I10,' bytes'//,
+     #        ' Free memory for base table                         ',
+     #        I10,' bytes'/)
+
+ 4030 FORMAT (
+     #' Maximum number of positions per dimension (in 7-D case)',I6//
+     #' Maximum sum of code list lengths per sub-table         ',I6//
+     #' Maximum number of key aggregations per dimension       ',I6//
+     #' Maximum number of keys per dimension                   ',I6//
+     #' Maximum number of sub-table indexes                  ',I8//
+     #' Maximum number of suppressed cells (sorting)         ',I8//
+     #' Maximum length of work space (sorting)               ',I8/)
+
+ 4040 FORMAT (' Memory ',I10,' not enough bytes,','  ***ABEND***'/,
+     #        ' Minimum ',I10,' bytes + number of records'/,
+     #        ' Change control data (memory-request)')
+ 4050 FORMAT(' inconsistency in the number of dimensions ',I10/,
+     # ' ***ABEND*** check control file')
+

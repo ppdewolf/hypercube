@@ -1,0 +1,20 @@
+C**********************************************************************
+C* GHMITER VERSION 2.2 INTERNATIONAL                                  *
+C*                                                                    *
+C* MESSAGES FOR MODULE: ARBEIT                                        *
+C* LANGUAGE:            ENGLISH                                       *
+C*                                                                    *
+C**********************************************************************
+
+ 4010 FORMAT ('********** ERROR ERROR ERROR *************************'/
+     #         ' ',I5,' target suppressions(S) could not be protected
+     #sufficiently.'/
+     #        ' Inconsistent sub-table:#')
+ 4030 FORMAT('******REDUCED PROTECTION LEVEL CONFIRMED.'/
+     # '******REDUCED SLIDING PROTECTION RATIO: ',F10.3)
+ 4035 FORMAT('******PROTECTION CONFIRMED AT PROTECTION LEVEL ZERO.'/)   
+ 4040 FORMAT('******ERROR: PROTECTION COULD NOT BE CONFIRMED, '/
+     #  'EVEN AT ZERO PROTECTION LEVEL!!')
+ 4020  FORMAT ('      Total value ',I3,'. Target suppression:',F12.0)
+
+
